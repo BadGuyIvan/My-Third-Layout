@@ -1,0 +1,1323 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url('fonts/RobotoMedium.eot');
+    src: url('fonts/RobotoMedium.eot') format('embedded-opentype'), url('fonts/RobotoMedium.woff2') format('woff2'), url('fonts/RobotoMedium.woff') format('woff'), url('fonts/RobotoMedium.ttf') format('truetype'), url('fonts/RobotoMedium.svg#RobotoMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('fonts/RobotoRegular.eot');
+    src: url('fonts/RobotoRegular.eot') format('embedded-opentype'), url('fonts/RobotoRegular.woff2') format('woff2'), url('fonts/RobotoRegular.woff') format('woff'), url('fonts/RobotoRegular.ttf') format('truetype'), url('fonts/RobotoRegular.svg#RobotoRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'RobotoLight';
+    src: url('fonts/RobotoLight.eot');
+    src: url('fonts/RobotoLight.eot') format('embedded-opentype'), url('fonts/RobotoLight.woff2') format('woff2'), url('fonts/RobotoLight.woff') format('woff'), url('fonts/RobotoLight.ttf') format('truetype'), url('fonts/RobotoLight.svg#RobotoLight') format('svg');
+}
+
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('fonts/OpenSansBold.eot');
+    src: url('fonts/OpenSansBold.eot') format('embedded-opentype'), url('fonts/OpenSansBold.woff2') format('woff2'), url('fonts/OpenSansBold.woff') format('woff'), url('fonts/OpenSansBold.ttf') format('truetype'), url('fonts/OpenSansBold.svg#OpenSansBold') format('svg');
+}
+
+@font-face {
+    font-family: "my";
+    src: url("fonts/my.eot");
+    src: url("fonts/my.eot?#iefix") format("embedded-opentype"), url("fonts/my.woff") format("woff"), url("fonts/my.ttf") format("truetype"), url("fonts/my.svg#my") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[data-icon]:before {
+    font-family: "my" !important;
+    content: attr(data-icon);
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    font-family: "my" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-browser:before {
+    content: "\61";
+}
+
+.icon-more:before {
+    content: "\63";
+}
+
+.icon-logo:before {
+    content: "\62";
+}
+
+.icon-vimeo:before {
+    content: "\64";
+}
+
+.icon-twitter:before {
+    content: "\65";
+}
+
+.icon-tumblr:before {
+    content: "\66";
+}
+
+.icon-pinterest:before {
+    content: "\67";
+}
+
+.icon-google-plus:before {
+    content: "\68";
+}
+
+.icon-github:before {
+    content: "\69";
+}
+
+.icon-flickr:before {
+    content: "\6a";
+}
+
+.icon-facebook:before {
+    content: "\6b";
+}
+
+body {
+    background: #282a2e;
+}
+
+header .navbar-default {
+    background: none;
+    border: none;
+    margin-top: 20px;
+}
+
+header .navbar-default .navbar-header {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+header .navbar-default .navbar-header .navbar-brand {
+    color: #ffffff;
+    font-family: "RobotoMedium";
+    font-size: 2.188rem;
+}
+
+header .navbar-default .navbar-header .icon-logo {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 28px;
+    padding-top: 5px;
+    margin-right: 5px;
+    background: -webkit-linear-gradient(140deg, #aaca29 0%, #aaca29 30%, #1bbc9d 90%, #1bbc9d 100%);
+    background: linear-gradient(310deg, #aaca29 0%, #aaca29 30%, #1bbc9d 90%, #1bbc9d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header .navbar-default .navbar-nav {
+    margin-right: 10px;
+}
+
+header .navbar-default .navbar-nav .active a {
+    color: #97c248;
+    background: none;
+}
+
+header .navbar-default .navbar-nav .active a:hover {
+    background: none;
+    color: #339fc6;
+}
+
+header .navbar-default .navbar-nav .active a:focus {
+    background: none;
+    color: #97c248;
+}
+
+header .navbar-default .navbar-nav li a {
+    color: #ffffff;
+    font-family: "RobotoRegular";
+    font-size: 1.563rem;
+}
+
+header .navbar-default .navbar-nav li a:hover {
+    background: none;
+    color: #339fc6;
+}
+
+header .navbar-default .navbar-nav li a:hover:focus {
+    background: none;
+    color: #ffffff;
+}
+
+#slide div[class*="col-"] {
+    margin: 0;
+    padding: 0;
+}
+
+#slide #carousel-example-generic .carousel-inner:after {
+    content: '';
+    display: block;
+    width: 35%;
+    height: 100%;
+    background: url('img/icon.png') no-repeat right bottom;
+    background-size: contain;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 10%;
+}
+
+#slide #carousel-example-generic .carousel-inner .item {
+    max-height: 700px;
+}
+
+#slide #carousel-example-generic .carousel-inner .item .caption {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    z-index: 10;
+    color: #fff;
+    -webkit-transform: translate(-15%, -50%);
+    transform: translate(-15%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    line-height: 40px;
+}
+
+#slide #carousel-example-generic .carousel-inner .item .caption span {
+    text-shadow: 0px 0px 5px #000000;
+}
+
+#slide #carousel-example-generic .carousel-inner .item .caption span:first-child {
+    font-size: 5rem;
+    font-family: "RobotoLight";
+}
+
+#slide #carousel-example-generic .carousel-inner .item .caption span:nth-child(2) {
+    font-size: 3.125rem;
+    font-family: "RobotoMedium";
+}
+
+#slide #carousel-example-generic a[class*="-control"] {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+#slide #carousel-example-generic .left-control {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+}
+
+#slide #carousel-example-generic .right-control {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+}
+
+#services {
+    height: 438px;
+}
+
+#services .title {
+    text-align: center;
+    color: #ffffff;
+    font-family: "RobotoLight";
+    font-size: 2.8125rem;
+    margin: 50px 0px 75px 0px;
+}
+
+#services .icon-services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+#services .icon-services .title-web {
+    margin-top: 50px;
+    color: #ffffff;
+    text-align: center;
+    font-family: "RobotoLight";
+    font-size: 2rem;
+}
+
+#services .icon-services .description {
+    margin-top: 10px;
+    color: #ffffff;
+    font-family: "Arial";
+    text-align: center;
+    font-size: 1.1875rem;
+}
+
+#services .icon-services a {
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#services .icon-services a .icon-browser {
+    padding-top: 9px;
+}
+
+#services .icon-services a {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#services .icon-services a i[class*="fa"],
+#services .icon-services a i[class*="icon"] {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 4rem;
+    background: -webkit-linear-gradient(140deg, #aaca29 0%, #aaca29 30%, #1bbc9d 90%, #1bbc9d 100%);
+    background: linear-gradient(310deg, #aaca29 0%, #aaca29 30%, #1bbc9d 90%, #1bbc9d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#services .icon-services a i[class*="fa"]:after,
+#services .icon-services a i[class*="icon"]:after {
+    content: '';
+    height: 100px;
+    width: 100px;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 12%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: rgba(49, 51, 56, 0.7);
+    border-radius: 50%;
+}
+
+#DoYouLikeIt {
+    height: 430px;
+    background: url("img/ls-s3-0.jpg") no-repeat top;
+    background-position-y: 100%;
+}
+
+#DoYouLikeIt .container-fluid {
+    height: 100%;
+}
+
+#DoYouLikeIt .container-fluid .inner-do-you-like {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+}
+
+#DoYouLikeIt .container-fluid .inner-do-you-like .title-do-you-like {
+    color: #ffffff;
+    font-family: "RobotoLight";
+    font-size: 3.75rem;
+    text-shadow: 0px 0px 5px #000000;
+    margin-left: 7%;
+}
+
+#DoYouLikeIt .container-fluid .inner-do-you-like p {
+    margin-left: 7%;
+}
+
+#DoYouLikeIt .container-fluid .inner-do-you-like p button:nth-child(1) {
+    background: #b0cd3b;
+    color: #ffffff!important;
+    border: none;
+}
+
+#DoYouLikeIt .container-fluid .inner-do-you-like p button:nth-child(2) {
+    background: #1bbc9d;
+    color: #ffffff;
+    border: none;
+}
+
+#portfolio .title-portfolio {
+    margin-top: 40px;
+    color: #ffffff;
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+#portfolio .nav-portfolio {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#portfolio .nav-portfolio a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 12px 24px;
+    background-color: rgba(49, 51, 56, 0.7);
+}
+
+#portfolio .Portfolio ul.nave {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+#portfolio .Portfolio ul.nave a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 12px 24px;
+    background-color: rgba(49, 51, 56, 0.7);
+}
+
+#portfolio .Portfolio ul.nave .active a {
+    background-color: #1bbc9d;
+}
+
+#portfolio .Portfolio .row:nth-child(2) {
+    margin-top: 20px;
+}
+
+#portfolio .Portfolio .tab-content div[class*="col-"] img {
+    position: relative;
+}
+
+#portfolio .Portfolio .tab-content div[class*="col-"] .description {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+}
+
+#portfolio .Portfolio .tab-content div[class*="col-"] .description .inner-description .title {
+    color: #ffffff;
+    font-family: "RobotoMedium";
+    font-size: 1.6875rem;
+}
+
+#portfolio .Portfolio .tab-content div[class*="col-"] .description .inner-description .title .chapter {
+    font-family: "RobotoLight";
+    font-size: 1.25rem;
+}
+
+#portfolio .Portfolio .tab-content div[class*="col-"] .description .inner-description .list-inline {
+    margin-top: 20px;
+}
+
+#portfolio .Portfolio .tab-content div[class*="col-"] .description .inner-description .list-inline li {
+    color: #ffffff;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+#portfolio .Portfolio .tab-content div[class*="col-"] .description .inner-description .list-inline li i {
+    padding-top: 2px;
+}
+
+#portfolio .Portfolio .tab-content div[class*="col-"] .description .inner-description .list-inline li div[class*="count-"] {
+    margin-left: 10px;
+}
+
+#portfolio .Portfolio .tab-content div[class*="col-"]:hover .description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 85%;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#portfolio .load-more {
+    text-align: center;
+}
+
+#portfolio .load-more .inner-load-more {
+    margin-top: 20px;
+    color: #ffffff;
+    font-family: "RobotoLight";
+    font-size: 1.5rem;
+}
+
+#portfolio .load-more .inner-load-more a {
+    text-decoration: none;
+}
+
+#portfolio .load-more .inner-load-more a .icon {
+    font-size: 1.9rem;
+    color: #aaca29;
+}
+
+#Pricing #title {
+    height: 430px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: url("img/energy.jpg") no-repeat top;
+    background-position-y: 50%;
+    background-size: 100%;
+}
+
+#Pricing #title span {
+    color: #ffffff;
+    text-shadow: 0px 0px 5px #000000;
+    margin-left: 5%;
+}
+
+#Pricing #title span:nth-child(1) {
+    font-family: "RobotoLight";
+    font-size: 3.75rem;
+}
+
+#Pricing #title span:nth-child(2) {
+    font-family: "RobotoMedium";
+    font-size: 2.5rem;
+}
+
+#Pricing #OurPrice {
+    margin-top: 50px;
+    text-align: center;
+    color: #ffffff;
+    font-family: "RobotoLight";
+    font-size: 2.25rem;
+}
+
+#Pricing #line-1 {
+    height: 490px;
+    margin-top: 50px;
+}
+
+#Pricing #line-1 div[class^="col-"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#Pricing #line-1 .Website-hosting,
+#Pricing #line-1 .Dedicated-hosting {
+    color: #ffffff;
+    text-align: center;
+}
+
+#Pricing #line-1 .Website-hosting ul,
+#Pricing #line-1 .Dedicated-hosting ul {
+    list-style: none;
+    padding: 0;
+}
+
+#Pricing #line-1 .Website-hosting ul .title,
+#Pricing #line-1 .Dedicated-hosting ul .title {
+    margin: 30px 0px 30px 0px;
+}
+
+#Pricing #line-1 .Website-hosting ul .price,
+#Pricing #line-1 .Dedicated-hosting ul .price {
+    padding: 15px 0px 15px 0px;
+    background: #1bbc9d;
+}
+
+#Pricing #line-1 .Website-hosting ul ul,
+#Pricing #line-1 .Dedicated-hosting ul ul {
+    margin-top: 40px;
+}
+
+#Pricing #line-1 .Website-hosting ul ul li,
+#Pricing #line-1 .Dedicated-hosting ul ul li {
+    margin-bottom: 20px;
+}
+
+#Pricing #line-1 .Website-hosting ul ul li .first-word,
+#Pricing #line-1 .Dedicated-hosting ul ul li .first-word {
+    font-family: "OpenSansBold";
+}
+
+#Pricing #line-1 .Website-hosting ul ul li:last-child,
+#Pricing #line-1 .Dedicated-hosting ul ul li:last-child {
+    margin-bottom: 40px;
+}
+
+#Pricing #line-1 .Website-hosting ul .purchaise a,
+#Pricing #line-1 .Dedicated-hosting ul .purchaise a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "RobotoLight";
+    font-size: 1.5rem;
+    padding: 10px 25px;
+    background-color: #b0cd3b;
+    border-radius: 5px;
+}
+
+#Pricing #line-1 .Reseller-cloud {
+    background-color: #f4f4f4!important;
+    color: #969696;
+    text-align: center;
+}
+
+#Pricing #line-1 .Reseller-cloud ul {
+    list-style: none;
+    padding: 0;
+}
+
+#Pricing #line-1 .Reseller-cloud ul .title {
+    margin: 30px 0px 30px 0px;
+}
+
+#Pricing #line-1 .Reseller-cloud ul .price {
+    color: #ffffff;
+    padding: 15px 0px 15px 0px;
+    background: #1bbc9d;
+}
+
+#Pricing #line-1 .Reseller-cloud ul ul {
+    margin-top: 40px;
+}
+
+#Pricing #line-1 .Reseller-cloud ul ul li {
+    margin-bottom: 20px;
+}
+
+#Pricing #line-1 .Reseller-cloud ul ul li .first-word {
+    font-family: "OpenSansBold";
+    color: #5c5c5c;
+}
+
+#Pricing #line-1 .Reseller-cloud ul ul li:last-child {
+    margin-bottom: 40px;
+}
+
+#Pricing #line-1 .Reseller-cloud ul .purchaise a {
+    text-decoration: none;
+    font-family: "RobotoLight";
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding: 10px 25px;
+    background-color: #b0cd3b;
+    border-radius: 5px;
+}
+
+#Pricing #line-1 .Website-hosting,
+#Pricing #line-1 .Reseller-cloud,
+#Pricing #line-1 .Dedicated-hosting {
+    width: 260px;
+    height: 430px;
+    background-color: rgba(49, 51, 56, 0.7);
+    border-radius: 5px;
+}
+
+#Pricing #line-2 {
+    height: 510px;
+    margin-top: 30px;
+}
+
+#Pricing #line-2 .container-fluid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+#Pricing #line-2 .container-fluid .inner-line-2 {
+    margin: 0 auto;
+    height: 440px;
+    width: 200px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    text-align: center;
+    color: #969696;
+}
+
+#Pricing #line-2 .container-fluid .inner-line-2 ul {
+    list-style: none;
+    padding: 0;
+    padding-top: 1px;
+}
+
+#Pricing #line-2 .container-fluid .inner-line-2 ul .title {
+    margin: 30px 0px 30px 0px;
+}
+
+#Pricing #line-2 .container-fluid .inner-line-2 ul .price {
+    padding: 15px 0px 15px 0px;
+    color: #ffffff;
+    background: #424242;
+}
+
+#Pricing #line-2 .container-fluid .inner-line-2 ul .price2 {
+    padding: 15px 0px 15px 0px;
+    color: #ffffff;
+    background: #74b0a4;
+}
+
+#Pricing #line-2 .container-fluid .inner-line-2 ul .price3 {
+    padding: 15px 0px 15px 0px;
+    color: #ffffff;
+    background: #b6c380;
+}
+
+#Pricing #line-2 .container-fluid .inner-line-2 ul .price4 {
+    padding: 15px 0px 15px 0px;
+    color: #74b0a4;
+    background: #e4e4e4;
+}
+
+#Pricing #line-2 .container-fluid .inner-line-2 ul ul {
+    margin-top: 40px;
+}
+
+#Pricing #line-2 .container-fluid .inner-line-2 ul ul li {
+    margin-bottom: 20px;
+}
+
+#Pricing #line-2 .container-fluid .inner-line-2 ul ul li .first-word {
+    font-family: "OpenSansBold";
+    color: #5c5c5c;
+}
+
+#Pricing #line-2 .container-fluid .inner-line-2 ul ul li:last-child {
+    margin-bottom: 40px;
+}
+
+#Pricing #line-2 .container-fluid .inner-line-2 ul .purchaise1 a {
+    text-decoration: none;
+    color: #000000;
+    font-family: "RobotoLight";
+    font-size: 1.5rem;
+    padding: 10px 25px;
+    background-color: #e4e4e4;
+    border-radius: 5px;
+}
+
+#Pricing #line-2 .container-fluid .inner-line-2 ul .purchaise2 a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "RobotoLight";
+    font-size: 1.5rem;
+    padding: 10px 25px;
+    background-color: #74b0a4;
+    border-radius: 5px;
+}
+
+#Pricing #line-2 .container-fluid .inner-line-2 ul .purchaise3 a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "RobotoLight";
+    font-size: 1.5rem;
+    padding: 10px 25px;
+    background-color: #b6c380;
+    border-radius: 5px;
+}
+
+#Pricing #line-2 .container-fluid .inner-line-2 ul .purchaise4 a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "RobotoLight";
+    font-size: 1.5rem;
+    padding: 10px 25px;
+    background-color: #424242;
+    border-radius: 5px;
+}
+
+#Opinion {
+    height: 260px;
+    overflow: hidden;
+}
+
+#Opinion .title {
+    text-align: center;
+}
+
+#Opinion .title span {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "RobotoMedium";
+    background-color: #282a2e;
+    padding: 0 50px 0 50px;
+}
+
+#Opinion .title:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 7.5px;
+    left: 0;
+    z-index: -1;
+    background-color: rgba(66, 66, 66, 0.9);
+}
+
+#Opinion .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#Opinion .text .inner-text {
+    margin-top: 50px;
+    text-align: center;
+    width: 33%;
+    color: #717171;
+}
+
+#Opinion .text .inner-text:before {
+    content: "“";
+    position: absolute;
+    font-family: "Arial";
+    font-size: 300px;
+    top: -10%;
+    left: 20%;
+}
+
+#Opinion .text .inner-text:after {
+    content: "”";
+    position: absolute;
+    font-family: "Arial";
+    font-size: 300px;
+    top: -10%;
+    right: 20%;
+}
+
+#Opinion .Client {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #b0cd3b;
+}
+
+#Team .title-team {
+    height: 430px;
+    background: url("img/team-title-background.jpg") no-repeat top;
+    background-position-y: 50%;
+    background-size: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#Team .title-team .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+#Team .title-team .title span {
+    color: #ffffff;
+    width: 100%;
+    text-shadow: 0px 0px 5px #000000;
+    margin-left: 15%;
+}
+
+#Team .title-team .title span:nth-child(1) {
+    font-family: "RobotoLight";
+    font-size: 3.5rem;
+}
+
+#Team .title-team .title span:nth-child(2) {
+    font-family: "RobotoMedium";
+    font-size: 2.5rem;
+}
+
+#Team .team .title {
+    text-align: center;
+    font-family: "RobotoLight";
+    font-size: 3rem;
+    margin: 50px 0 50px 0;
+    color: #ffffff;
+}
+
+#Team .team .our-team div[class*="col-"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+#Team .team .our-team .inner-team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    max-width: 223px;
+    height: 500px;
+}
+
+#Team .team .our-team .inner-team .name {
+    margin-top: 30px;
+    color: #ffffff;
+    font-family: "RobotoMedium";
+}
+
+#Team .team .our-team .inner-team .career {
+    color: #ffffff;
+    font-family: "RobotoLight";
+}
+
+#Team .team .our-team .inner-team .description {
+    color: #adadad;
+    margin-top: 10px;
+    font-size: 1.15rem;
+    line-height: 20px;
+}
+
+#Skill .title {
+    position: relative;
+    text-align: center;
+}
+
+#Skill .title span {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "RobotoMedium";
+    font-size: 1.75rem;
+    padding: 0 50px 0 50px;
+    background: #282a2e;
+}
+
+#Skill .title:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 11px;
+    left: 0;
+    z-index: -1;
+    background-color: rgba(66, 66, 66, 0.9);
+}
+
+#Skill .circle-percent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+#Skill .circle-percent .wrapper {
+    position: relative;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+}
+
+#Skill .circle-percent .wrapper #svg #bar {
+    stroke: #424242;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+#Skill .circle-percent .wrapper #svg .percent {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+#Skill .circle-percent .wrapper .percent-indicator {
+    color: #ffffff;
+    position: absolute;
+    font-size: 2.5rem;
+    font-family: "RobotoMedium";
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#Skill .circle-percent .wrapper .skill-name {
+    color: #ffffff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#More-6000 {
+    height: 430px;
+    background: url("img/New-York-2.jpg") no-repeat top;
+    background-position-y: 50%;
+    background-size: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+#More-6000 span {
+    text-shadow: 0px 0px 5px #000000;
+    margin-left: 12%;
+}
+
+#More-6000 span:nth-child(1) {
+    color: #ffffff;
+    font-family: "RobotoMedium";
+    font-size: 4rem;
+}
+
+#More-6000 span:nth-child(2) {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-family: "RobotoLight";
+}
+
+#Contacts {
+    height: 550px;
+}
+
+#Contacts .title {
+    color: #ffffff;
+    text-align: center;
+    font-size: 3rem;
+    font-family: "RobotoLight";
+    margin: 50px 0 50px 0;
+}
+
+#Contacts form span {
+    color: #ffffff;
+    border-bottom: 2px solid #424242;
+    padding-bottom: 5px;
+    display: block;
+    width: 100%;
+}
+
+#Contacts form .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#Contacts form .form-group:nth-child(2) {
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+}
+
+#Contacts form .form-group input {
+    border: none;
+    border-radius: 0px;
+    background: #222327;
+    color: #989898;
+}
+
+#Contacts form .form-group input:nth-child(1) {
+    margin-right: 15px;
+}
+
+#Contacts form .form-group input:nth-child(2) {
+    width: 100%;
+}
+
+#Contacts form textarea {
+    resize: none;
+    border: none;
+    border-radius: 0px;
+    background: #222327;
+    color: #ffffff;
+    height: 100%;
+}
+
+#Contacts form button {
+    margin-top: 15px;
+    border-radius: 0px;
+    background: #1bbc9d;
+    border: none;
+    color: #ffffff;
+}
+
+#Contacts .more span {
+    color: #ffffff;
+    border-bottom: 2px solid #424242;
+    padding-bottom: 5px;
+    display: block;
+    width: 100%;
+}
+
+#Contacts .more .info {
+    margin-top: 25px;
+    list-style: none;
+    color: #989898;
+    padding: 0;
+}
+
+#Contacts .more .info li {
+    margin-bottom: 15px;
+}
+
+#Contacts .more button {
+    margin-top: 25px;
+    border-radius: 0px;
+    background: #1bbc9d;
+    border: none;
+    color: #ffffff;
+}
+
+#Social .container-fluid {
+    padding: 0;
+}
+
+#Social .container-fluid .inner-social {
+    height: 430px;
+    background: url("img/victor-levin-1920x1440.jpg") no-repeat top;
+    background-position-y: 60%;
+    background-size: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#Social .container-fluid .inner-social span {
+    color: #ffffff;
+    margin-left: 2%;
+}
+
+#Social .container-fluid .inner-social span:nth-child(1) {
+    font-family: "RobotoMedium";
+    font-size: 4rem;
+}
+
+#Social .container-fluid .inner-social span:nth-child(2) {
+    font-family: "RobotoLight";
+    font-size: 2.5rem;
+}
+
+#Social .container-fluid .inner-social ul {
+    margin-left: 2%;
+}
+
+#Social .container-fluid .inner-social ul li a {
+    text-decoration: none;
+    color: #282a2e;
+}
+
+#Social .container-fluid .inner-social ul li a i {
+    font-size: 3rem;
+}
+
+#Social .container-fluid .inner-social ul li a i:before {
+    -webkit-transition-duration: 0.9s;
+    transition-duration: 0.9s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+    border-radius: 50%;
+}
+
+#Social .container-fluid .inner-social ul li a i:hover:before {
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    color: #b0cd3b;
+    margin: -5px;
+    padding: 5px;
+    background-color: #282a2e;
+    border-radius: 50%;
+}
+
+#Recent {
+    height: 450px;
+}
+
+#Recent .tweet h4,
+#Recent .Posts h4 {
+    color: #ffffff;
+    text-transform: uppercase;
+    border-bottom: 2px solid #424242;
+    margin-top: 80px;
+    padding-bottom: 10px;
+}
+
+#Recent .Photo-Stream h4 {
+    color: #ffffff;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ffffff;
+    margin-top: 80px;
+    padding-bottom: 10px;
+}
+
+#Recent .tweet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    color: #5f5f60;
+}
+
+#Recent .tweet .date {
+    margin: 10px 0 10px 0;
+}
+
+#Recent .tweet .date .fa-twitter {
+    margin-right: 10px;
+    color: #b0cd3b;
+}
+
+#Recent .tweet .message a {
+    color: #1bbc9d;
+}
+
+#Recent .Posts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    color: #5f5f60;
+}
+
+#Recent .Posts .date {
+    margin: 10px 0 10px 0;
+}
+
+#Recent .Photo-Stream ul li {
+    margin-bottom: 10px;
+}
+
+#footer {
+    height: 150px;
+    background-color: #222327;
+}
+
+#footer .container-fluid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+#footer .container-fluid .logo {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+#footer .container-fluid .logo .icon-logo {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 28px;
+    margin-right: 5px;
+    width: 30px;
+    background: -webkit-linear-gradient(140deg, #aaca29 0%, #aaca29 30%, #1bbc9d 90%, #1bbc9d 100%);
+    background: linear-gradient(310deg, #aaca29 0%, #aaca29 30%, #1bbc9d 90%, #1bbc9d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#footer .container-fluid .logo a {
+    color: #ffffff;
+    font-family: "RobotoMedium";
+    font-size: 2.188rem;
+    text-decoration: none;
+}
+
+#footer .container-fluid .contact ul li {
+    margin-left: 15px;
+}
+
+#footer .container-fluid .contact ul li:last-child {
+    margin-right: 0;
+}
+
+#footer .container-fluid .contact ul li a {
+    text-decoration: none;
+    color: #79797a;
+}
